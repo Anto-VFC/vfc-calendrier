@@ -16,7 +16,7 @@
     "opponent": "Amiens SC",
     "home": false,
     "official": true,
-    "location": "Extérieur",
+    "location": "Stade Crédit Agricole la Licorne, Amiens",
     "note": "Horaire officialisé"
   },
   {
@@ -36,7 +36,7 @@
     "opponent": "US Orléans",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Stade de la Source, Orléans",
     "note": "Horaire à confirmer"
   },
   {
@@ -56,7 +56,7 @@
     "opponent": "FC Villefranche Beaujolais",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Stade Armand-Chouffet, Villefranche-sur-Saône",
     "note": "Horaire à confirmer"
   },
   {
@@ -76,7 +76,7 @@
     "opponent": "US Thionville Lusitanos",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Stade de Guentrange, Thionville",
     "note": "Horaire à confirmer"
   },
   {
@@ -96,7 +96,7 @@
     "opponent": "SM Caen",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Stade Michel-d'Ornano, Caen",
     "note": "Horaire à confirmer"
   },
   {
@@ -116,7 +116,7 @@
     "opponent": "Paris 13 Atlético",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Stade Charléty, Paris",
     "note": "Horaire à confirmer"
   },
   {
@@ -136,7 +136,7 @@
     "opponent": "FC Rouen 1899",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Stade Robert-Diochon, Le Petit-Quevilly",
     "note": "Horaire à confirmer"
   },
   {
@@ -166,7 +166,7 @@
     "opponent": "Le Puy-en-Velay FC",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Stade Charles-Massot, Le Puy-en-Velay",
     "note": "Horaire à confirmer"
   },
   {
@@ -186,7 +186,7 @@
     "opponent": "AS Cannes",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Stade Pierre-de-Coubertin, Cannes",
     "note": "Horaire à confirmer"
   },
   {
@@ -206,7 +206,7 @@
     "opponent": "QRM",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Stade Robert-Diochon, Le Petit-Quevilly",
     "note": "Horaire à confirmer"
   },
   {
@@ -226,7 +226,7 @@
     "opponent": "Valenciennes FC",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Stade du Hainaut, Valenciennes",
     "note": "Horaire à confirmer"
   },
   {
@@ -246,7 +246,7 @@
     "opponent": "SC Aubagne Air Bel",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Stade de Lattre-de-Tassigny, Aubagne",
     "note": "Horaire à confirmer"
   },
   {
@@ -266,7 +266,7 @@
     "opponent": "FC Bourg en Bresse P01",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Stade Marcel-Verchère, Bourg-en-Bresse",
     "note": "Horaire à confirmer"
   },
   {
@@ -286,7 +286,7 @@
     "opponent": "US Concarneau",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Stade Guy-Piriou, Concarneau",
     "note": "Horaire à confirmer"
   },
   {
@@ -306,7 +306,7 @@
     "opponent": "FC Fleury 91",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Essonne Stadium, Bondoufle",
     "note": "Horaire à confirmer"
   },
   {
@@ -316,7 +316,7 @@
     "opponent": "SC Bastia",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Stade Armand-Cesari, Furiani",
     "note": "Horaire à confirmer"
   },
   {
@@ -336,7 +336,7 @@
     "opponent": "FC Versailles",
     "home": false,
     "official": false,
-    "location": "Extérieur",
+    "location": "Stade Georges-Lefèvre, Saint-Germain-en-Laye",
     "note": "Horaire à confirmer"
   }
 ]
