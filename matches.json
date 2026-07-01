@@ -7,9 +7,7 @@
     "home": true,
     "official": true,
     "location": "Stade Henri-Desgrange, La Roche-sur-Yon",
-    "note": "Horaire officialisé automatiquement (programmation de la journée)",
-    "source_url": "https://ligue1.com/fr/articles/l1_article_5407-ligue-3-le-calendrier-de-la-saison-2026-2027",
-    "last_checked": "2026-07-01T20:39:01Z"
+    "note": "Horaire officialisé"
   },
   {
     "round": 2,
@@ -33,15 +31,13 @@
   },
   {
     "round": 4,
-    "date": "2026-08-20",
-    "time": "20:45",
+    "date": "2026-08-29",
+    "time": "19:00",
     "opponent": "US Orléans",
     "home": false,
-    "official": true,
+    "official": false,
     "location": "Extérieur",
-    "note": "Horaire officialisé automatiquement (source officielle FFF/LFP)",
-    "source_url": "https://ligue1.com/fr/articles/l1_article_5407-ligue-3-le-calendrier-de-la-saison-2026-2027",
-    "last_checked": "2026-07-01T20:39:01Z"
+    "note": "Horaire à confirmer"
   },
   {
     "round": 5,
@@ -135,27 +131,23 @@
   },
   {
     "round": 14,
-    "date": "2026-12-12",
-    "time": "20:45",
+    "date": "2026-12-05",
+    "time": "19:00",
     "opponent": "FC Rouen 1899",
     "home": false,
-    "official": true,
+    "official": false,
     "location": "Extérieur",
-    "note": "Horaire officialisé automatiquement (source officielle FFF/LFP)",
-    "source_url": "https://ligue1.com/fr/articles/l1_article_5407-ligue-3-le-calendrier-de-la-saison-2026-2027",
-    "last_checked": "2026-07-01T20:39:01Z"
+    "note": "Horaire à confirmer"
   },
   {
     "round": 15,
     "date": "2026-12-12",
-    "time": "20:45",
+    "time": "19:00",
     "opponent": "FC Fleury 91",
     "home": true,
-    "official": true,
+    "official": false,
     "location": "Stade Henri-Desgrange, La Roche-sur-Yon",
-    "note": "Horaire officialisé automatiquement (source officielle FFF/LFP)",
-    "source_url": "https://ligue1.com/fr/articles/l1_article_5407-ligue-3-le-calendrier-de-la-saison-2026-2027",
-    "last_checked": "2026-07-01T20:39:01Z"
+    "note": "Horaire à confirmer"
   },
   {
     "round": 16,
