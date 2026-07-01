@@ -3,12 +3,13 @@ name: Publier le calendrier VFC
 on:
   workflow_dispatch:
   schedule:
-    # GitHub planifie en UTC. Ces 2 horaires couvrent 8h en France été/hiver.
+    # GitHub utilise l'heure UTC.
+    # 06:00 UTC = 08:00 en France l'été ; 07:00 UTC = 08:00 en France l'hiver.
     - cron: '0 6 * * *'
     - cron: '0 7 * * *'
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -17,18 +18,27 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.time.outputs.should_run }}
     steps:
       - name: Vérifier 8h France
-        if: github.event_name == 'schedule'
+        id: time
         run: |
-          HOUR=$(TZ=Europe/Paris date +%H)
-          if [ "$HOUR" != "08" ]; then
-            echo "Il n'est pas 8h en France, arrêt."
-            exit 0
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          elif [ "$(TZ=Europe/Paris date +%H)" = "08" ]; then
+            echo "should_run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_run=false" >> "$GITHUB_OUTPUT"
           fi
 
+  build:
+    needs: check
+    if: needs.check.outputs.should_run == 'true'
+    runs-on: ubuntu-latest
+    steps:
       - name: Récupérer le dépôt
         uses: actions/checkout@v4
 
@@ -36,6 +46,21 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+
+      - name: Vérifier les sources officielles FFF/LFP
+        run: python update_matches_auto.py
+
+      - name: Sauvegarder matches.json si modifié
+        run: |
+          if [ -n "$(git status --porcelain matches.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add matches.json
+            git commit -m "Mise à jour automatique du calendrier VFC"
+            git push
+          else
+            echo "Aucun changement à sauvegarder dans matches.json"
+          fi
 
       - name: Générer le fichier ICS
         run: python generate_ics.py
@@ -50,6 +75,7 @@ jobs:
 
   deploy:
     needs: build
+    if: needs.build.result == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
