@@ -7,7 +7,9 @@
     "home": true,
     "official": true,
     "location": "Stade Henri-Desgrange, La Roche-sur-Yon",
-    "note": "Horaire officialisé"
+    "note": "Horaire officialisé automatiquement (programmation de la journée)",
+    "source_url": "https://ligue1.com/fr/articles/l1_article_5407-ligue-3-le-calendrier-de-la-saison-2026-2027",
+    "last_checked": "2026-07-01T20:39:01Z"
   },
   {
     "round": 2,
@@ -31,13 +33,15 @@
   },
   {
     "round": 4,
-    "date": "2026-08-29",
-    "time": "19:00",
+    "date": "2026-08-20",
+    "time": "20:45",
     "opponent": "US Orléans",
     "home": false,
-    "official": false,
+    "official": true,
     "location": "Extérieur",
-    "note": "Horaire à confirmer"
+    "note": "Horaire officialisé automatiquement (source officielle FFF/LFP)",
+    "source_url": "https://ligue1.com/fr/articles/l1_article_5407-ligue-3-le-calendrier-de-la-saison-2026-2027",
+    "last_checked": "2026-07-01T20:39:01Z"
   },
   {
     "round": 5,
@@ -131,23 +135,27 @@
   },
   {
     "round": 14,
-    "date": "2026-12-05",
-    "time": "19:00",
+    "date": "2026-12-12",
+    "time": "20:45",
     "opponent": "FC Rouen 1899",
     "home": false,
-    "official": false,
+    "official": true,
     "location": "Extérieur",
-    "note": "Horaire à confirmer"
+    "note": "Horaire officialisé automatiquement (source officielle FFF/LFP)",
+    "source_url": "https://ligue1.com/fr/articles/l1_article_5407-ligue-3-le-calendrier-de-la-saison-2026-2027",
+    "last_checked": "2026-07-01T20:39:01Z"
   },
   {
     "round": 15,
     "date": "2026-12-12",
-    "time": "19:00",
+    "time": "20:45",
     "opponent": "FC Fleury 91",
     "home": true,
-    "official": false,
+    "official": true,
     "location": "Stade Henri-Desgrange, La Roche-sur-Yon",
-    "note": "Horaire à confirmer"
+    "note": "Horaire officialisé automatiquement (source officielle FFF/LFP)",
+    "source_url": "https://ligue1.com/fr/articles/l1_article_5407-ligue-3-le-calendrier-de-la-saison-2026-2027",
+    "last_checked": "2026-07-01T20:39:01Z"
   },
   {
     "round": 16,
