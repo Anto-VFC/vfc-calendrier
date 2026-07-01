@@ -1,0 +1,60 @@
+name: Publier le calendrier VFC
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub planifie en UTC. Ces 2 horaires couvrent 8h en France été/hiver.
+    - cron: '0 6 * * *'
+    - cron: '0 7 * * *'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Vérifier 8h France
+        if: github.event_name == 'schedule'
+        run: |
+          HOUR=$(TZ=Europe/Paris date +%H)
+          if [ "$HOUR" != "08" ]; then
+            echo "Il n'est pas 8h en France, arrêt."
+            exit 0
+          fi
+
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Générer le fichier ICS
+        run: python generate_ics.py
+
+      - name: Configurer GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Envoyer le site à GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publier sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
