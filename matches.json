@@ -142,12 +142,14 @@
   {
     "round": 15,
     "date": "2026-12-12",
-    "time": "19:00",
+    "time": "20:45",
     "opponent": "FC Fleury 91",
     "home": true,
-    "official": false,
+    "official": true,
     "location": "Stade Henri-Desgrange, La Roche-sur-Yon",
-    "note": "Horaire à confirmer"
+    "note": "Horaire officialisé automatiquement",
+    "source_url": "https://ligue1.com/fr/articles/l1_article_5407-ligue-3-le-calendrier-de-la-saison-2026-2027",
+    "last_checked": "2026-07-02T05:10:50Z"
   },
   {
     "round": 16,
@@ -165,19 +167,23 @@
     "time": "19:00",
     "opponent": "Le Puy-en-Velay FC",
     "home": false,
-    "official": false,
+    "official": true,
     "location": "Stade Charles-Massot, Le Puy-en-Velay",
-    "note": "Horaire à confirmer"
+    "note": "Date officialisée automatiquement - horaire à confirmer",
+    "source_url": "https://www.fff.fr/article/17022-le-calendrier-2026-2027-est-servi.html",
+    "last_checked": "2026-07-02T05:10:48Z"
   },
   {
     "round": 18,
-    "date": "2027-01-30",
+    "date": "2027-02-01",
     "time": "19:00",
     "opponent": "Amiens SC",
     "home": true,
-    "official": false,
+    "official": true,
     "location": "Stade Henri-Desgrange, La Roche-sur-Yon",
-    "note": "Horaire à confirmer"
+    "note": "Date officialisée automatiquement - horaire à confirmer",
+    "source_url": "https://ligue1.com/fr/articles/l1_article_5407-ligue-3-le-calendrier-de-la-saison-2026-2027",
+    "last_checked": "2026-07-02T05:10:50Z"
   },
   {
     "round": 19,
@@ -305,9 +311,11 @@
     "time": "19:00",
     "opponent": "FC Fleury 91",
     "home": false,
-    "official": false,
+    "official": true,
     "location": "Essonne Stadium, Bondoufle",
-    "note": "Horaire à confirmer"
+    "note": "Date officialisée automatiquement - horaire à confirmer",
+    "source_url": "https://www.fff.fr/article/17022-le-calendrier-2026-2027-est-servi.html",
+    "last_checked": "2026-07-02T05:10:48Z"
   },
   {
     "round": 32,
@@ -335,8 +343,10 @@
     "time": "19:00",
     "opponent": "FC Versailles",
     "home": false,
-    "official": false,
+    "official": true,
     "location": "Stade Georges-Lefèvre, Saint-Germain-en-Laye",
-    "note": "Horaire à confirmer"
+    "note": "Date officialisée automatiquement - horaire à confirmer",
+    "source_url": "https://www.fff.fr/article/17022-le-calendrier-2026-2027-est-servi.html",
+    "last_checked": "2026-07-02T05:10:49Z"
   }
 ]
