@@ -1,0 +1,100 @@
+name: Mise à jour automatique calendrier VFC
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    # Toutes les 6 heures en UTC.
+    - cron: "17 */6 * * *"
+
+  push:
+    branches:
+      - main
+    paths:
+      - "matches.json"
+      - "generate_ics.py"
+      - "update_matches_auto.py"
+      - ".github/workflows/update-calendar.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: vfc-calendar-pages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Vérifier les dates et horaires officiels
+        run: python update_matches_auto.py
+
+      - name: Générer le fichier ICS
+        run: python generate_ics.py
+
+      - name: Copier le fichier à la racine
+        run: cp public/vfc-ligue3.ics vfc-ligue3.ics
+
+      - name: Contrôler le calendrier
+        run: |
+          test -s public/vfc-ligue3.ics
+          grep -q "BEGIN:VCALENDAR" public/vfc-ligue3.ics
+          grep -q "END:VCALENDAR" public/vfc-ligue3.ics
+
+          MATCH_COUNT=$(grep -c "BEGIN:VEVENT" public/vfc-ligue3.ics)
+          echo "Nombre de rencontres : $MATCH_COUNT"
+
+          if [ "$MATCH_COUNT" -ne 34 ]; then
+            echo "ERREUR : 34 rencontres sont attendues."
+            exit 1
+          fi
+
+      - name: Enregistrer les changements
+        run: |
+          if [ -n "$(git status --porcelain matches.json vfc-ligue3.ics)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+            git add matches.json vfc-ligue3.ics
+            git commit -m "Mise à jour automatique calendrier VFC"
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "Aucun changement à enregistrer."
+          fi
+
+      - name: Configurer GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Préparer GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Publier le calendrier
+        id: deployment
+        uses: actions/deploy-pages@v4
