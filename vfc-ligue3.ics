@@ -1,6 +1,6 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//OpenAI ChatGPT//VFC Ligue 3 2026-2027//FR
+PRODID:-//VFC Calendar GitHub//VFC Ligue 3 2026-2027//FR
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:VFC Ligue 3 2026-2027
@@ -25,473 +25,445 @@ RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
 END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
-UID:2026-08-07-fc-versailles@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
+UID:j1-2026-08-07-fc-versailles@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
 DTSTART;TZID=Europe/Paris:20260807T204500
 DTEND;TZID=Europe/Paris:20260807T224500
 SUMMARY:🏠 VFC - FC Versailles
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J1 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs FC Versa
- illes\nDomicile\nHoraire officialisé par la FFF.
-CATEGORIES:Domicile,Ligue 3,VFC
+ illes\nDomicile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-08-14-amiens-sc@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
+UID:j2-2026-08-14-amiens-sc@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
 DTSTART;TZID=Europe/Paris:20260814T190000
 DTEND;TZID=Europe/Paris:20260814T210000
 SUMMARY:✈️ Amiens SC - VFC
-LOCATION:Extérieur
+LOCATION:Stade Crédit Agricole la Licorne\, Amiens
 DESCRIPTION:J2 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs Amiens S
- C\nExtérieur\nHoraire officialisé par la FFF.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ C\nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-08-20-as-cannes@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20260820T204500
-DTEND;TZID=Europe/Paris:20260820T224500
+UID:j3-2026-08-20-as-cannes@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20260820T190000
+DTEND;TZID=Europe/Paris:20260820T210000
 SUMMARY:🏠 VFC - AS Cannes
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J3 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs AS Canne
- s\nDomicile\nHoraire officialisé par la FFF.
-CATEGORIES:Domicile,Ligue 3,VFC
+ s\nDomicile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-08-29-us-orl-ans@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20260829T190000
-DTEND;TZID=Europe/Paris:20260829T210000
+UID:j4-2026-08-29-us-orleans@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20260829T150000
+DTEND;TZID=Europe/Paris:20260829T170000
 SUMMARY:✈️ US Orléans - VFC
-LOCATION:Extérieur
+LOCATION:Stade de la Source\, Orléans
 DESCRIPTION:J4 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs US Orlé
- ans\nExtérieur\nHoraire à confirmer : événement placé à 19h00 par d
- éfaut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ ans\nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-09-05-qrm@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20260905T190000
-DTEND;TZID=Europe/Paris:20260905T210000
+UID:j5-2026-09-05-qrm@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20260905T150000
+DTEND;TZID=Europe/Paris:20260905T170000
 SUMMARY:🏠 VFC - QRM
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J5 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs QRM\nDom
- icile\nHoraire à confirmer : événement placé à 19h00 par défaut.
-CATEGORIES:Domicile,Ligue 3,VFC
+ icile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-09-12-fc-villefranche-beaujolais@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20260912T190000
-DTEND;TZID=Europe/Paris:20260912T210000
+UID:j6-2026-09-12-fc-villefranche-beaujolais@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20260912T150000
+DTEND;TZID=Europe/Paris:20260912T170000
 SUMMARY:✈️ FC Villefranche Beaujolais - VFC
-LOCATION:Extérieur
+LOCATION:Stade Armand-Chouffet\, Villefranche-sur-Saône
 DESCRIPTION:J6 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs FC Ville
- franche Beaujolais\nExtérieur\nHoraire à confirmer : événement placé 
- à 19h00 par défaut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ franche Beaujolais\nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-09-19-valenciennes-fc@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20260919T190000
-DTEND;TZID=Europe/Paris:20260919T210000
+UID:j7-2026-09-19-valenciennes-fc@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20260919T150000
+DTEND;TZID=Europe/Paris:20260919T170000
 SUMMARY:🏠 VFC - Valenciennes FC
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J7 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs Valencie
- nnes FC\nDomicile\nHoraire à confirmer : événement placé à 19h00 par 
- défaut.
-CATEGORIES:Domicile,Ligue 3,VFC
+ nnes FC\nDomicile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-09-26-us-thionville-lusitanos@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20260926T190000
-DTEND;TZID=Europe/Paris:20260926T210000
+UID:j8-2026-09-26-us-thionville-lusitanos@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20260926T150000
+DTEND;TZID=Europe/Paris:20260926T170000
 SUMMARY:✈️ US Thionville Lusitanos - VFC
-LOCATION:Extérieur
+LOCATION:Stade de Guentrange\, Thionville
 DESCRIPTION:J8 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs US Thion
- ville Lusitanos\nExtérieur\nHoraire à confirmer : événement placé à 
- 19h00 par défaut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ ville Lusitanos\nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-03-sc-aubagne-air-bel@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20261003T190000
-DTEND;TZID=Europe/Paris:20261003T210000
+UID:j9-2026-10-03-sc-aubagne-air-bel@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20261003T030000
+DTEND;TZID=Europe/Paris:20261003T050000
 SUMMARY:🏠 VFC - SC Aubagne Air Bel
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J9 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs SC Aubag
- ne Air Bel\nDomicile\nHoraire à confirmer : événement placé à 19h00 p
- ar défaut.
-CATEGORIES:Domicile,Ligue 3,VFC
+ ne Air Bel\nDomicile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-17-sm-caen@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20261017T190000
-DTEND;TZID=Europe/Paris:20261017T210000
+UID:j10-2026-10-17-sm-caen@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20261017T030000
+DTEND;TZID=Europe/Paris:20261017T050000
 SUMMARY:✈️ SM Caen - VFC
-LOCATION:Extérieur
+LOCATION:Stade Michel-d'Ornano\, Caen
 DESCRIPTION:J10 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs SM Caen
- \nExtérieur\nHoraire à confirmer : événement placé à 19h00 par défa
- ut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ \nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-10-31-fc-bourg-en-bresse-p01@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20261031T190000
-DTEND;TZID=Europe/Paris:20261031T210000
+UID:j11-2026-10-31-fc-bourg-en-bresse-p01@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20261031T030000
+DTEND;TZID=Europe/Paris:20261031T050000
 SUMMARY:🏠 VFC - FC Bourg en Bresse P01
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J11 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs FC Bour
- g en Bresse P01\nDomicile\nHoraire à confirmer : événement placé à 19
- h00 par défaut.
-CATEGORIES:Domicile,Ligue 3,VFC
+ g en Bresse P01\nDomicile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-07-paris-13-atl-tico@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20261107T190000
-DTEND;TZID=Europe/Paris:20261107T210000
+UID:j12-2026-11-07-paris-13-atletico@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20261107T030000
+DTEND;TZID=Europe/Paris:20261107T050000
 SUMMARY:✈️ Paris 13 Atlético - VFC
-LOCATION:Extérieur
+LOCATION:Stade Charléty\, Paris
 DESCRIPTION:J12 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs Paris 1
- 3 Atlético\nExtérieur\nHoraire à confirmer : événement placé à 19h0
- 0 par défaut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ 3 Atlético\nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-11-21-us-concarneau@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20261121T190000
-DTEND;TZID=Europe/Paris:20261121T210000
+UID:j13-2026-11-21-us-concarneau@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20261121T030000
+DTEND;TZID=Europe/Paris:20261121T050000
 SUMMARY:🏠 VFC - US Concarneau
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J13 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs US Conc
- arneau\nDomicile\nHoraire à confirmer : événement placé à 19h00 par d
- éfaut.
-CATEGORIES:Domicile,Ligue 3,VFC
+ arneau\nDomicile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-12-05-fc-rouen-1899@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20261205T190000
-DTEND;TZID=Europe/Paris:20261205T210000
+UID:j14-2026-12-05-fc-rouen-1899@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20261205T030000
+DTEND;TZID=Europe/Paris:20261205T050000
 SUMMARY:✈️ FC Rouen 1899 - VFC
-LOCATION:Extérieur
+LOCATION:Stade Robert-Diochon\, Le Petit-Quevilly
 DESCRIPTION:J14 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs FC Roue
- n 1899\nExtérieur\nHoraire à confirmer : événement placé à 19h00 par
-  défaut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ n 1899\nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2026-12-12-fc-fleury-91@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20261212T190000
-DTEND;TZID=Europe/Paris:20261212T210000
+UID:j15-2026-12-12-fc-fleury-91@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20261212T030000
+DTEND;TZID=Europe/Paris:20261212T050000
 SUMMARY:🏠 VFC - FC Fleury 91
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J15 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs FC Fleu
- ry 91\nDomicile\nHoraire à confirmer : événement placé à 19h00 par d
- éfaut.
-CATEGORIES:Domicile,Ligue 3,VFC
+ ry 91\nDomicile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-01-16-sc-bastia@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270116T190000
-DTEND;TZID=Europe/Paris:20270116T210000
+UID:j16-2027-01-16-sc-bastia@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270116T030000
+DTEND;TZID=Europe/Paris:20270116T050000
 SUMMARY:🏠 VFC - SC Bastia
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J16 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs SC Bast
- ia\nDomicile\nHoraire à confirmer : événement placé à 19h00 par défa
- ut.
-CATEGORIES:Domicile,Ligue 3,VFC
+ ia\nDomicile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-01-23-le-puy-en-velay-fc@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270123T190000
-DTEND;TZID=Europe/Paris:20270123T210000
+UID:j17-2027-01-23-le-puy-en-velay-fc@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270123T030000
+DTEND;TZID=Europe/Paris:20270123T050000
 SUMMARY:✈️ Le Puy-en-Velay FC - VFC
-LOCATION:Extérieur
+LOCATION:Stade Charles-Massot\, Le Puy-en-Velay
 DESCRIPTION:J17 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs Le Puy-
- en-Velay FC\nExtérieur\nHoraire à confirmer : événement placé à 19h0
- 0 par défaut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ en-Velay FC\nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-01-30-amiens-sc@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270130T190000
-DTEND;TZID=Europe/Paris:20270130T210000
+UID:j18-2027-01-30-amiens-sc@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270130T030000
+DTEND;TZID=Europe/Paris:20270130T050000
 SUMMARY:🏠 VFC - Amiens SC
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J18 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs Amiens 
- SC\nDomicile\nHoraire à confirmer : événement placé à 19h00 par défa
- ut.
-CATEGORIES:Domicile,Ligue 3,VFC
+ SC\nDomicile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-02-06-as-cannes@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270206T190000
-DTEND;TZID=Europe/Paris:20270206T210000
+UID:j19-2027-02-06-as-cannes@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270206T030000
+DTEND;TZID=Europe/Paris:20270206T050000
 SUMMARY:✈️ AS Cannes - VFC
-LOCATION:Extérieur
+LOCATION:Stade Pierre-de-Coubertin\, Cannes
 DESCRIPTION:J19 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs AS Cann
- es\nExtérieur\nHoraire à confirmer : événement placé à 19h00 par dé
- faut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ es\nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-02-13-us-orl-ans@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
+UID:j20-2027-02-13-us-orleans@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
 DTSTART;TZID=Europe/Paris:20270213T190000
 DTEND;TZID=Europe/Paris:20270213T210000
 SUMMARY:🏠 VFC - US Orléans
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J20 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs US Orl
- éans\nDomicile\nHoraire à confirmer : événement placé à 19h00 par d
- éfaut.
-CATEGORIES:Domicile,Ligue 3,VFC
+ éans\nDomicile\nHoraire à confirmer : événement placé à l’heure in
+ diquée par défaut.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-02-20-qrm@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270220T190000
-DTEND;TZID=Europe/Paris:20270220T210000
+UID:j21-2027-02-20-qrm@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270220T030000
+DTEND;TZID=Europe/Paris:20270220T050000
 SUMMARY:✈️ QRM - VFC
-LOCATION:Extérieur
+LOCATION:Stade Robert-Diochon\, Le Petit-Quevilly
 DESCRIPTION:J21 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs QRM\nEx
- térieur\nHoraire à confirmer : événement placé à 19h00 par défaut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ térieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-02-27-fc-villefranche-beaujolais@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270227T190000
-DTEND;TZID=Europe/Paris:20270227T210000
+UID:j22-2027-02-27-fc-villefranche-beaujolais@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270227T030000
+DTEND;TZID=Europe/Paris:20270227T050000
 SUMMARY:🏠 VFC - FC Villefranche Beaujolais
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J22 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs FC Vill
- efranche Beaujolais\nDomicile\nHoraire à confirmer : événement placé 
- à 19h00 par défaut.
-CATEGORIES:Domicile,Ligue 3,VFC
+ efranche Beaujolais\nDomicile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-03-06-valenciennes-fc@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270306T190000
-DTEND;TZID=Europe/Paris:20270306T210000
+UID:j23-2027-03-06-valenciennes-fc@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270306T030000
+DTEND;TZID=Europe/Paris:20270306T050000
 SUMMARY:✈️ Valenciennes FC - VFC
-LOCATION:Extérieur
+LOCATION:Stade du Hainaut\, Valenciennes
 DESCRIPTION:J23 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs Valenci
- ennes FC\nExtérieur\nHoraire à confirmer : événement placé à 19h00 p
- ar défaut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ ennes FC\nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-03-13-us-thionville-lusitanos@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270313T190000
-DTEND;TZID=Europe/Paris:20270313T210000
+UID:j24-2027-03-13-us-thionville-lusitanos@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270313T030000
+DTEND;TZID=Europe/Paris:20270313T050000
 SUMMARY:🏠 VFC - US Thionville Lusitanos
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J24 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs US Thio
- nville Lusitanos\nDomicile\nHoraire à confirmer : événement placé à 1
- 9h00 par défaut.
-CATEGORIES:Domicile,Ligue 3,VFC
+ nville Lusitanos\nDomicile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-03-20-sc-aubagne-air-bel@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270320T190000
-DTEND;TZID=Europe/Paris:20270320T210000
+UID:j25-2027-03-20-sc-aubagne-air-bel@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270320T030000
+DTEND;TZID=Europe/Paris:20270320T050000
 SUMMARY:✈️ SC Aubagne Air Bel - VFC
-LOCATION:Extérieur
+LOCATION:Stade de Lattre-de-Tassigny\, Aubagne
 DESCRIPTION:J25 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs SC Auba
- gne Air Bel\nExtérieur\nHoraire à confirmer : événement placé à 19h0
- 0 par défaut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ gne Air Bel\nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-03-27-sm-caen@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270327T190000
-DTEND;TZID=Europe/Paris:20270327T210000
+UID:j26-2027-03-27-sm-caen@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270327T030000
+DTEND;TZID=Europe/Paris:20270327T050000
 SUMMARY:🏠 VFC - SM Caen
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J26 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs SM Caen
- \nDomicile\nHoraire à confirmer : événement placé à 19h00 par défaut
- .
-CATEGORIES:Domicile,Ligue 3,VFC
+ \nDomicile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-04-03-fc-bourg-en-bresse-p01@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270403T190000
-DTEND;TZID=Europe/Paris:20270403T210000
+UID:j27-2027-04-03-fc-bourg-en-bresse-p01@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270403T030000
+DTEND;TZID=Europe/Paris:20270403T050000
 SUMMARY:✈️ FC Bourg en Bresse P01 - VFC
-LOCATION:Extérieur
+LOCATION:Stade Marcel-Verchère\, Bourg-en-Bresse
 DESCRIPTION:J27 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs FC Bour
- g en Bresse P01\nExtérieur\nHoraire à confirmer : événement placé à 
- 19h00 par défaut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ g en Bresse P01\nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-04-10-paris-13-atl-tico@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270410T190000
-DTEND;TZID=Europe/Paris:20270410T210000
+UID:j28-2027-04-10-paris-13-atletico@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270410T030000
+DTEND;TZID=Europe/Paris:20270410T050000
 SUMMARY:🏠 VFC - Paris 13 Atlético
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J28 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs Paris 1
- 3 Atlético\nDomicile\nHoraire à confirmer : événement placé à 19h00 
- par défaut.
-CATEGORIES:Domicile,Ligue 3,VFC
+ 3 Atlético\nDomicile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-04-17-us-concarneau@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270417T190000
-DTEND;TZID=Europe/Paris:20270417T210000
+UID:j29-2027-04-17-us-concarneau@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270417T030000
+DTEND;TZID=Europe/Paris:20270417T050000
 SUMMARY:✈️ US Concarneau - VFC
-LOCATION:Extérieur
+LOCATION:Stade Guy-Piriou\, Concarneau
 DESCRIPTION:J29 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs US Conc
- arneau\nExtérieur\nHoraire à confirmer : événement placé à 19h00 par
-  défaut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ arneau\nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-04-24-fc-rouen-1899@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270424T190000
-DTEND;TZID=Europe/Paris:20270424T210000
+UID:j30-2027-04-24-fc-rouen-1899@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270424T030000
+DTEND;TZID=Europe/Paris:20270424T050000
 SUMMARY:🏠 VFC - FC Rouen 1899
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J30 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs FC Roue
- n 1899\nDomicile\nHoraire à confirmer : événement placé à 19h00 par d
- éfaut.
-CATEGORIES:Domicile,Ligue 3,VFC
+ n 1899\nDomicile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-05-01-fc-fleury-91@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270501T190000
-DTEND;TZID=Europe/Paris:20270501T210000
+UID:j31-2027-05-01-fc-fleury-91@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270501T030000
+DTEND;TZID=Europe/Paris:20270501T050000
 SUMMARY:✈️ FC Fleury 91 - VFC
-LOCATION:Extérieur
+LOCATION:Essonne Stadium\, Bondoufle
 DESCRIPTION:J31 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs FC Fleu
- ry 91\nExtérieur\nHoraire à confirmer : événement placé à 19h00 par 
- défaut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ ry 91\nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-05-08-sc-bastia@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270508T190000
-DTEND;TZID=Europe/Paris:20270508T210000
+UID:j32-2027-05-08-sc-bastia@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270508T030000
+DTEND;TZID=Europe/Paris:20270508T050000
 SUMMARY:✈️ SC Bastia - VFC
-LOCATION:Extérieur
+LOCATION:Stade Armand-Cesari\, Furiani
 DESCRIPTION:J32 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs SC Bast
- ia\nExtérieur\nHoraire à confirmer : événement placé à 19h00 par dé
- faut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ ia\nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-05-14-le-puy-en-velay-fc@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270514T190000
-DTEND;TZID=Europe/Paris:20270514T210000
+UID:j33-2027-05-14-le-puy-en-velay-fc@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270514T030000
+DTEND;TZID=Europe/Paris:20270514T050000
 SUMMARY:🏠 VFC - Le Puy-en-Velay FC
 LOCATION:Stade Henri-Desgrange\, La Roche-sur-Yon
 DESCRIPTION:J33 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs Le Puy-
- en-Velay FC\nDomicile\nHoraire à confirmer : événement placé à 19h00 
- par défaut.
-CATEGORIES:Domicile,Ligue 3,VFC
+ en-Velay FC\nDomicile\nHoraire officialisé.
+CATEGORIES:Domicile\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
-UID:2027-05-21-fc-versailles@vfc-ligue3-2026-2027
-DTSTAMP:20260701T191601Z
-DTSTART;TZID=Europe/Paris:20270521T190000
-DTEND;TZID=Europe/Paris:20270521T210000
+UID:j34-2027-05-21-fc-versailles@vfc-ligue3-2026-2027
+DTSTAMP:20260729T165127Z
+DTSTART;TZID=Europe/Paris:20270521T030000
+DTEND;TZID=Europe/Paris:20270521T050000
 SUMMARY:✈️ FC Versailles - VFC
-LOCATION:Extérieur
+LOCATION:Stade Georges-Lefèvre\, Saint-Germain-en-Laye
 DESCRIPTION:J34 - Ligue 3 2026-2027\nVendée FC La Roche-sur-Yon vs FC Vers
- ailles\nExtérieur\nHoraire à confirmer : événement placé à 19h00 par
-  défaut.
-CATEGORIES:Extérieur,Ligue 3,VFC
+ ailles\nExtérieur\nHoraire officialisé.
+CATEGORIES:Extérieur\,Ligue 3\,VFC
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT

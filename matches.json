@@ -7,91 +7,93 @@
     "home": true,
     "official": true,
     "location": "Stade Henri-Desgrange, La Roche-sur-Yon",
-    "note": "Horaire officialisé"
+    "note": "Horaire officialisé",
+    "source_url": "https://www.fff.fr/article/17019-j1-j2-j3-la-programmation-officialisee.html",
+    "last_checked": "2026-07-29T16:50:32Z"
   },
   {
     "round": 2,
     "date": "2026-08-14",
-    "time": "07:00",
+    "time": "19:00",
     "opponent": "Amiens SC",
     "home": false,
     "official": true,
     "location": "Stade Crédit Agricole la Licorne, Amiens",
-    "note": "Horaire officialisé automatiquement",
-    "source_url": "https://www.as-cannes.com/calendrier/",
-    "last_checked": "2026-07-29T16:31:50Z"
+    "note": "Horaire officialisé",
+    "source_url": "https://www.fff.fr/article/17019-j1-j2-j3-la-programmation-officialisee.html",
+    "last_checked": "2026-07-29T16:50:32Z"
   },
   {
     "round": 3,
     "date": "2026-08-20",
-    "time": "08:45",
+    "time": "19:00",
     "opponent": "AS Cannes",
     "home": true,
     "official": true,
     "location": "Stade Henri-Desgrange, La Roche-sur-Yon",
     "note": "Horaire officialisé automatiquement",
-    "source_url": "https://www.as-cannes.com/calendrier/",
-    "last_checked": "2026-07-29T16:31:50Z"
+    "source_url": "https://ligue1.com/fr/articles/l1_article_5407-ligue-3-le-calendrier-de-la-saison-2026-2027",
+    "last_checked": "2026-07-29T16:50:45Z"
   },
   {
     "round": 4,
     "date": "2026-08-29",
-    "time": "03:00",
+    "time": "15:00",
     "opponent": "US Orléans",
     "home": false,
     "official": true,
     "location": "Stade de la Source, Orléans",
-    "note": "Horaire officialisé automatiquement",
-    "source_url": "https://www.as-cannes.com/calendrier/",
-    "last_checked": "2026-07-29T16:31:50Z"
+    "note": "Horaire officialisé",
+    "source_url": "https://www.fff.fr/article/17087-j4-a-j8-le-programme-des-matches-decales.html",
+    "last_checked": "2026-07-29T16:50:32Z"
   },
   {
     "round": 5,
     "date": "2026-09-05",
-    "time": "03:00",
+    "time": "15:00",
     "opponent": "QRM",
     "home": true,
     "official": true,
     "location": "Stade Henri-Desgrange, La Roche-sur-Yon",
-    "note": "Horaire officialisé automatiquement",
-    "source_url": "https://www.as-cannes.com/calendrier/",
-    "last_checked": "2026-07-29T16:31:50Z"
+    "note": "Horaire officialisé",
+    "source_url": "https://www.fff.fr/article/17087-j4-a-j8-le-programme-des-matches-decales.html",
+    "last_checked": "2026-07-29T16:50:32Z"
   },
   {
     "round": 6,
-    "date": "2026-09-10",
-    "time": "08:45",
+    "date": "2026-09-12",
+    "time": "15:00",
     "opponent": "FC Villefranche Beaujolais",
     "home": false,
     "official": true,
     "location": "Stade Armand-Chouffet, Villefranche-sur-Saône",
-    "note": "Horaire officialisé automatiquement",
-    "source_url": "https://www.as-cannes.com/calendrier/",
-    "last_checked": "2026-07-29T16:31:50Z"
+    "note": "Horaire officialisé",
+    "source_url": "https://www.fff.fr/article/17087-j4-a-j8-le-programme-des-matches-decales.html",
+    "last_checked": "2026-07-29T16:50:32Z"
   },
   {
     "round": 7,
-    "date": "2026-09-17",
-    "time": "08:45",
+    "date": "2026-09-19",
+    "time": "15:00",
     "opponent": "Valenciennes FC",
     "home": true,
     "official": true,
     "location": "Stade Henri-Desgrange, La Roche-sur-Yon",
-    "note": "Horaire officialisé automatiquement",
-    "source_url": "https://www.as-cannes.com/calendrier/",
-    "last_checked": "2026-07-29T16:31:50Z"
+    "note": "Horaire officialisé",
+    "source_url": "https://www.fff.fr/article/17087-j4-a-j8-le-programme-des-matches-decales.html",
+    "last_checked": "2026-07-29T16:50:32Z"
   },
   {
     "round": 8,
     "date": "2026-09-26",
-    "time": "03:00",
+    "time": "15:00",
     "opponent": "US Thionville Lusitanos",
     "home": false,
     "official": true,
     "location": "Stade de Guentrange, Thionville",
-    "note": "Horaire officialisé automatiquement",
-    "source_url": "https://www.as-cannes.com/calendrier/",
-    "last_checked": "2026-07-29T16:31:50Z"
+    "note": "Horaire officialisé",
+    "source_url": "https://www.fff.fr/article/17087-j4-a-j8-le-programme-des-matches-decales.html",
+    "last_checked": "2026-07-29T16:50:32Z"
   },
   {
     "round": 9,
