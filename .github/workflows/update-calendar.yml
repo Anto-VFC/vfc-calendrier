@@ -1,12 +1,21 @@
-name: Publier le calendrier VFC
+name: Mise à jour automatique calendrier VFC
 
 on:
   workflow_dispatch:
+
   schedule:
-    # GitHub utilise l'heure UTC.
-    # 06:00 UTC = 08:00 en France l'été ; 07:00 UTC = 08:00 en France l'hiver.
-    - cron: '0 6 * * *'
-    - cron: '0 7 * * *'
+    # Toutes les 6 heures.
+    # Les horaires cron GitHub sont exprimés en UTC.
+    - cron: "17 */6 * * *"
+
+  push:
+    branches:
+      - main
+    paths:
+      - "matches.json"
+      - "generate_ics.py"
+      - "update_matches_auto.py"
+      - ".github/workflows/update-calendar.yml"
 
 permissions:
   contents: write
@@ -14,73 +23,92 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: vfc-calendar-pages
   cancel-in-progress: false
 
 jobs:
-  check:
+  update:
     runs-on: ubuntu-latest
-    outputs:
-      should_run: ${{ steps.time.outputs.should_run }}
-    steps:
-      - name: Vérifier 8h France
-        id: time
-        run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
-          elif [ "$(TZ=Europe/Paris date +%H)" = "08" ]; then
-            echo "should_run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "should_run=false" >> "$GITHUB_OUTPUT"
-          fi
+    timeout-minutes: 20
 
-  build:
-    needs: check
-    if: needs.check.outputs.should_run == 'true'
-    runs-on: ubuntu-latest
     steps:
       - name: Récupérer le dépôt
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Installer Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.12"
 
-      - name: Vérifier les sources officielles FFF/LFP
+      - name: Vérifier les sources officielles
         run: python update_matches_auto.py
 
-      - name: Sauvegarder matches.json si modifié
+      - name: Générer le calendrier ICS
+        run: python generate_ics.py
+
+      - name: Copier les fichiers du site
         run: |
-          if [ -n "$(git status --porcelain matches.json)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add matches.json
-            git commit -m "Mise à jour automatique du calendrier VFC"
-            git push
-          else
-            echo "Aucun changement à sauvegarder dans matches.json"
+          mkdir -p public
+
+          if [ -f index.html ]; then
+            cp index.html public/index.html
           fi
 
-      - name: Générer le fichier ICS
-        run: python generate_ics.py
+          # Copie supplémentaire à la racine du dépôt.
+          # Le fichier publié par GitHub Pages reste celui de public/.
+          cp public/vfc-ligue3.ics vfc-ligue3.ics
+
+      - name: Vérifier le fichier ICS
+        run: |
+          test -s public/vfc-ligue3.ics
+          grep -q "BEGIN:VCALENDAR" public/vfc-ligue3.ics
+          grep -q "END:VCALENDAR" public/vfc-ligue3.ics
+
+          MATCH_COUNT=$(grep -c "BEGIN:VEVENT" public/vfc-ligue3.ics)
+
+          echo "Nombre de matchs présents : $MATCH_COUNT"
+
+          if [ "$MATCH_COUNT" -ne 34 ]; then
+            echo "Le calendrier doit contenir exactement 34 matchs."
+            exit 1
+          fi
+
+      - name: Sauvegarder les changements
+        run: |
+          if [ -n "$(git status --porcelain matches.json vfc-ligue3.ics)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+            git add matches.json vfc-ligue3.ics
+            git commit -m "Mise à jour automatique du calendrier VFC"
+
+            # Évite un échec si une modification a été faite
+            # pendant l'exécution de l'action.
+            git pull --rebase origin main
+            git push origin main
+          else
+            echo "Aucune modification à enregistrer."
+          fi
 
       - name: Configurer GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Envoyer le site à GitHub Pages
+      - name: Préparer GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
 
   deploy:
-    needs: build
-    if: needs.build.result == 'success'
+    needs: update
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - name: Publier sur GitHub Pages
+      - name: Publier le calendrier
         id: deployment
         uses: actions/deploy-pages@v4
