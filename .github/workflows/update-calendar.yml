@@ -4,8 +4,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    # Toutes les 6 heures.
-    # Les horaires cron GitHub sont exprimés en UTC.
+    # Toutes les 6 heures en UTC.
     - cron: "17 */6 * * *"
 
   push:
@@ -29,7 +28,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
 
     steps:
       - name: Récupérer le dépôt
@@ -42,54 +41,41 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Vérifier les sources officielles
+      - name: Vérifier les dates et horaires officiels
         run: python update_matches_auto.py
 
-      - name: Générer le calendrier ICS
+      - name: Générer le fichier ICS
         run: python generate_ics.py
 
-      - name: Copier les fichiers du site
-        run: |
-          mkdir -p public
+      - name: Copier le fichier à la racine
+        run: cp public/vfc-ligue3.ics vfc-ligue3.ics
 
-          if [ -f index.html ]; then
-            cp index.html public/index.html
-          fi
-
-          # Copie supplémentaire à la racine du dépôt.
-          # Le fichier publié par GitHub Pages reste celui de public/.
-          cp public/vfc-ligue3.ics vfc-ligue3.ics
-
-      - name: Vérifier le fichier ICS
+      - name: Contrôler le calendrier
         run: |
           test -s public/vfc-ligue3.ics
           grep -q "BEGIN:VCALENDAR" public/vfc-ligue3.ics
           grep -q "END:VCALENDAR" public/vfc-ligue3.ics
 
           MATCH_COUNT=$(grep -c "BEGIN:VEVENT" public/vfc-ligue3.ics)
-
-          echo "Nombre de matchs présents : $MATCH_COUNT"
+          echo "Nombre de rencontres : $MATCH_COUNT"
 
           if [ "$MATCH_COUNT" -ne 34 ]; then
-            echo "Le calendrier doit contenir exactement 34 matchs."
+            echo "ERREUR : 34 rencontres sont attendues."
             exit 1
           fi
 
-      - name: Sauvegarder les changements
+      - name: Enregistrer les changements
         run: |
           if [ -n "$(git status --porcelain matches.json vfc-ligue3.ics)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
             git add matches.json vfc-ligue3.ics
-            git commit -m "Mise à jour automatique du calendrier VFC"
-
-            # Évite un échec si une modification a été faite
-            # pendant l'exécution de l'action.
+            git commit -m "Mise à jour automatique calendrier VFC"
             git pull --rebase origin main
             git push origin main
           else
-            echo "Aucune modification à enregistrer."
+            echo "Aucun changement à enregistrer."
           fi
 
       - name: Configurer GitHub Pages
